@@ -1,4 +1,4 @@
-import { Recycle, Cpu, Users, GraduationCap, Heart } from 'lucide-react';
+import { Recycle, Cpu, Users, GraduationCap, Heart, QrCode } from 'lucide-react';
 
 const aboutImage = 'https://images.pexels.com/photos/9037599/pexels-photo-9037599.jpeg?auto=compress&cs=tinysrgb&h=650&w=940';
 
@@ -81,9 +81,18 @@ export function About() {
                 ações presenciais aproximam a universidade da comunidade e criam conexões reais.
               </p>
             </div>
-            <div className="flex items-center gap-2 bg-white/15 px-5 py-3 rounded-xl backdrop-blur-sm flex-shrink-0">
-              <Recycle className="w-6 h-6 text-white" aria-hidden="true" />
-              <span className="font-semibold">ReciclaTech</span>
+            <div className="flex flex-col items-center gap-3 flex-shrink-0">
+              <div className="flex items-center gap-2 bg-white/15 px-5 py-3 rounded-xl backdrop-blur-sm">
+                <Recycle className="w-6 h-6 text-white" aria-hidden="true" />
+                <span className="font-semibold">ReciclaTech</span>
+              </div>
+              <a
+                href="#qrcode"
+                className="inline-flex items-center gap-2 bg-white text-brand-700 hover:bg-brand-50 font-semibold px-5 py-2.5 rounded-xl transition-all duration-300 hover:scale-105 text-sm"
+              >
+                <QrCode className="w-4 h-4" aria-hidden="true" />
+                Gerar QR Code
+              </a>
             </div>
           </div>
         </div>
