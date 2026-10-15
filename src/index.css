@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+  body {
+    @apply font-sans text-brand-900 bg-beige-50;
+  }
+  h1, h2, h3, h4 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-4 py-16 sm:px-6 lg:px-8;
+  }
+  .section-title {
+    @apply text-3xl sm:text-4xl font-bold text-brand-800 mb-3;
+  }
+  .section-subtitle {
+    @apply text-lg text-brand-700/80 mb-10 max-w-2xl;
+  }
+  .card {
+    @apply bg-white rounded-2xl shadow-sm border border-brand-100 p-6 transition-all duration-300;
+  }
+  .card-hover {
+    @apply hover:shadow-lg hover:border-brand-300 hover:-translate-y-1;
+  }
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-brand-300/50;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 bg-white hover:bg-beige-100 text-brand-700 font-semibold px-6 py-3 rounded-xl border-2 border-brand-300 transition-all duration-300 hover:scale-105 hover:border-brand-500 focus:outline-none focus:ring-4 focus:ring-brand-200/50;
+  }
+}
