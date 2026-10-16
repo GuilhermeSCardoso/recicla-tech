@@ -66,7 +66,7 @@ export function EnvironmentHealth() {
             <p className="text-brand-800/80 leading-relaxed mb-3">
               A limpeza urbana vai muito além de deixar a cidade bonita. Ruas e terrenos limpos
               reduzem a proliferação de vetores (ratos, insetos, mosquitos), evitam entupimento de
-              bueiros e galerias pluviais e previnem enchências.
+              bueiros e galerias pluviais e previnem enchentes.
             </p>
             <p className="text-brand-800/80 leading-relaxed">
               Cada morador tem um papel: descartar o lixo no local e horário corretos, não jogar
