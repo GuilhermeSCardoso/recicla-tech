@@ -2,7 +2,7 @@ import { Recycle, Leaf, Smartphone } from 'lucide-react';
 
 // COLOQUE AQUI O ENDEREÇO DO SEU SITE PUBLICADO (ex: https://meu-site.bolt.host)
 // Se deixar vazio, será usado o endereço atual da página.
-const SITE_URL = '';
+const SITE_URL = 'https://guilhermescardoso.github.io/recicla-tech/';
 
 export function QRCodePage() {
   const url = SITE_URL || (typeof window !== 'undefined' ? window.location.origin : '');
